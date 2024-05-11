@@ -1,0 +1,13 @@
+*{
+    font-family: 'Satoshi Variable';
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.lime-green-switch .ant-switch {
+    background-color: limegreen;
+}
+  
