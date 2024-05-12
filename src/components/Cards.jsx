@@ -26,7 +26,7 @@ function Cards() {
   const items2 = [
     { title: "Bundle 1", icon: <InboxOutlined /> },
     { title: "Bundle 2", icon: <InboxOutlined /> },
-    { title: "Bundle 3", icon: <LayoutOutlined /> },
+    { title: "Bundle 3", icon: <InboxOutlined /> },
   ];
 
   const AddComponent = () => {
