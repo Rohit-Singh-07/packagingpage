@@ -1,6 +1,6 @@
 function SideNav() {
     return (
-      <div className='w-[17vw] h-screen shadow-right'>
+      <div className='md:w-[17vw] w-0 h-screen shadow-right overflow-hidden'>
         <h1>Filler</h1>
       </div>
     )

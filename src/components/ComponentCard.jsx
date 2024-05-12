@@ -40,7 +40,7 @@ function ComponetCard({ title, icon }) {
     <>
       <div
         onClick={OpenDown}
-        className="bg-zinc-50 p-3 mb-6 border-2 border-zinc-200 rounded-lg w-[56vw] flex justify-between"
+        className="bg-zinc-50 p-3 mb-6 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] flex justify-between"
       >
         <div className="flex gap-2 text-[20px] font-medium items-center">
           <span className="text-[25px]">{icon}</span>
@@ -58,8 +58,8 @@ function ComponetCard({ title, icon }) {
       <div
         className={
           isOpen
-            ? "bg-zinc-50 border-2 border-zinc-200 rounded-lg w-[56vw] transition-all mb-6"
-            : "border-0 h-0 w-[56vw] overflow-hidden transition-all"
+            ? "bg-zinc-50 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] transition-all mb-6"
+            : "border-0 h-0 md:w-[56vw] w-80 overflow-hidden transition-all"
         }
       >
         <Form layout="vertical" className="m-6">
@@ -72,7 +72,7 @@ function ComponetCard({ title, icon }) {
               </span>
             }
           >
-            <Input placeholder="Matte Box" className="h-11 w-[80%]" />
+            <Input placeholder="Matte Box" className="h-11 md:w-[80%] w-[100%]" />
           </Form.Item>
 
           <Form.Item
@@ -92,12 +92,12 @@ function ComponetCard({ title, icon }) {
             <Input.TextArea
               autoSize={false}
               placeholder="Write Description"
-              className="w-[80%]"
+              className="md:w-[80%] w-[100%]"
               style={{ resize: "none", height: "120px" }}
             />
           </Form.Item>
 
-          <div className="flex flex-col gap-4 w-[80%]">
+          <div className="flex flex-col gap-4 md:w-[80%] w-[100%]">
             <h2 className="text-[26px] font-medium">About Component</h2>
             <div className="flex gap-2">
               <InfoCircleOutlined className="py-2 px-4 rounded-lg border-zinc-300 border-[1px]" />
@@ -145,7 +145,7 @@ function ComponetCard({ title, icon }) {
               />
             </div>
 
-            <div className="flex gap-12 text-[20px] text-zinc-500 font-medium">
+            <div className="flex md:gap-12 gap-3 md:flex-row flex-col text-[20px] text-zinc-500 font-medium">
               <div className="flex gap-5 items-center">
                 <h1>Customisable</h1> <CheckButton />{" "}
               </div>
@@ -159,21 +159,21 @@ function ComponetCard({ title, icon }) {
             <h2 className="text-[26px] font-medium pt-5">
               Set Independent Pricing
             </h2>
-            <div className="flex justify-between">
+            <div className="flex md:flex-row flex-col justify-between">
               <Form.Item
                 label={<span className="pt-3 font-semibold">Pack of 1</span>}
               >
-                <Input placeholder="Enter Price" className="h-11 w-[16.4vw]" />
+                <Input placeholder="Enter Price" className="h-11 md:w-[16.4vw] w-[100%]" />
               </Form.Item>
               <Form.Item
                 label={<span className="pt-3 font-semibold">Pack of 10</span>}
               >
-                <Input placeholder="Enter Price" className="h-11 w-[16.4vw]" />
+                <Input placeholder="Enter Price" className="h-11 md:w-[16.4vw] w-[100%]" />
               </Form.Item>
               <Form.Item
                 label={<span className="pt-3 font-semibold">Pack of 50</span>}
               >
-                <Input placeholder="Enter Price" className="h-11 w-[16.4vw]" />
+                <Input placeholder="Enter Price" className="h-11 md:w-[16.4vw] w-[100%]" />
               </Form.Item>
             </div>
           </div>

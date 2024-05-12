@@ -81,7 +81,7 @@ function BundleCard({ title, icon }) {
     <>
       <div
         onClick={OpenDown}
-        className="bg-zinc-50 p-3 mb-6 border-2 border-zinc-200 rounded-lg w-[56vw] flex justify-between"
+        className="bg-zinc-50 p-3 mb-6 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] flex justify-between"
       >
         <div className="flex gap-2 text-[20px] font-medium items-center">
           <span className="text-[25px]">{icon}</span>
@@ -100,8 +100,8 @@ function BundleCard({ title, icon }) {
       <div
         className={
           isOpen
-            ? "bg-zinc-50 border-2 border-zinc-200 rounded-lg w-[56vw] transition-all mb-6"
-            : "border-0 h-0 w-[56vw] overflow-hidden transition-all"
+            ? "bg-zinc-50 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] transition-all mb-6"
+            : "border-0 h-0 md:w-[56vw] w-[90vw] overflow-hidden transition-all"
         }
       >
         <Form layout="vertical" className="m-6">
@@ -140,7 +140,7 @@ function BundleCard({ title, icon }) {
               </span>
             }
           >
-            <Input placeholder="Enter Name" className="h-11 w-[95%]" />
+            <Input placeholder="Enter Name" className="h-11 md:w-[80%] w-[100%]" />
           </Form.Item>
 
           <div className="flex flex-col gap-4 mb-8">
@@ -151,7 +151,7 @@ function BundleCard({ title, icon }) {
             </Flex>
           </div>
 
-          <div className="flex flex-col gap-4 w-[95%]">
+          <div className="flex flex-col gap-4 md:w-[80%] w-[100%]">
             <div className="flex gap-4 items-start h-8  mb-6">
               <h2 className="text-[26px] font-medium">Components</h2>
               <img src={FileAdd} alt="" className="pt-1 h-8" />
@@ -229,7 +229,7 @@ function BundleCard({ title, icon }) {
             </div>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex md:flex-row flex-col justify-between">
             <Form.Item
               label={
                 <span className="pt-3 text-[22px] font-medium">
@@ -237,7 +237,7 @@ function BundleCard({ title, icon }) {
                 </span>
               }
             >
-              <Input placeholder="Enter Price" className="h-11 w-[24vw]" />
+              <Input placeholder="Enter Price" className="h-11 md:w-[24vw] w-[100%]" />
             </Form.Item>
             <Form.Item
               label={
@@ -246,7 +246,7 @@ function BundleCard({ title, icon }) {
                 </span>
               }
             >
-              <Input placeholder="Enter Price" className="h-11 w-[24vw]" />
+              <Input placeholder="Enter Price" className="h-11 md:w-[24vw] w-[100%]" />
             </Form.Item>
           </div>
         </Form>

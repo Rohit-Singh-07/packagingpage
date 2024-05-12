@@ -8,7 +8,7 @@ function CheckButton() {
 
     const onChange = (checked) => {
       setChecked(checked);
-      setBackgroundColor(checked ? 'limegreen' : 'gray')  
+      setBackgroundColor(checked ? 'limegreen' : 'gray')
       };
 
   return (
