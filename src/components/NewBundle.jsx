@@ -74,7 +74,7 @@ function NewBundle({ onSave }) {
   return (
     <>
       <div
-        className="bg-zinc-50 border-2 border-zinc-200 rounded-lg w-[56vw] transition-all mb-6"
+        className="bg-zinc-50 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] transition-all mb-6"
       >
         <Form layout="vertical" className="m-6">
           <h2 className="text-[23px] font-medium pb-4">New Bundle</h2>
@@ -199,7 +199,7 @@ function NewBundle({ onSave }) {
             </div>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex md:flex-row flex-col md:justify-between">
             <Form.Item
               label={
                 <span className="pt-3 text-[22px] font-medium">
@@ -207,7 +207,7 @@ function NewBundle({ onSave }) {
                 </span>
               }
             >
-              <Input placeholder="Enter Price" className="h-11 w-[24vw]" />
+              <Input placeholder="Enter Price" className="h-11 md:w-[24vw] w-[100%]" />
             </Form.Item>
             <Form.Item
               label={
@@ -216,7 +216,7 @@ function NewBundle({ onSave }) {
                 </span>
               }
             >
-              <Input placeholder="Enter Price" className="h-11 w-[24vw]" />
+              <Input placeholder="Enter Price" className="h-11 md:w-[24vw] w-[100%]" />
             </Form.Item>
           </div>
 

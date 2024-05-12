@@ -1,19 +1,17 @@
-*{
-    font-family: 'Satoshi Variable';
+* {
+  font-family: "Satoshi-Variable";
 }
 
 @font-face {
-    font-family: 'Satoshi Variable';
-    src: url('./assets/fonts/Satoshi-Variable.ttf') format('ttf')
-  }
-
-body{
-    overflow: hidden;
+  font-family: "Satoshi-Variable";
+  src: url("./assets/fonts/Satoshi-Variable.ttf") format("WOFF"),
+    url("./assets/fonts/Satoshi-Variable.ttf") format("WOFF2");
 }
 
+body {
+  overflow: hidden;
+}
 
 .lime-green-switch .ant-switch {
-    background-color: #ADD911;
+  background-color: #add911;
 }
-
-  
