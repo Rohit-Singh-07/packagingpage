@@ -49,8 +49,8 @@ function ComponetCard({ title, icon }) {
         <UpOutlined
           className={
             isOpen
-              ? "w-5 rotate-180 transition-all"
-              : "w-5 rotate-0 transition-all"
+              ? "rotate-180 transition-all text-[10px] font-extrabold px-2"
+              : "rotate-0 transition-all text-[10px] font-extrabold px-2"
           }
         />
       </div>
