@@ -2,7 +2,6 @@ import { useState } from "react";
 import CheckButton from "./CheckButton";
 import { Form, Input, Flex, Rate } from "antd";
 import {
-  UpOutlined,
   PlusOutlined,
   InfoCircleOutlined,
   LayoutOutlined,
@@ -81,20 +80,32 @@ function BundleCard({ title, icon }) {
     <>
       <div
         onClick={OpenDown}
-        className="bg-zinc-50 p-3 mb-6 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] flex justify-between"
+        className="bg-zinc-50 p-3 mb-6 border-2 border-zinc-200 rounded-lg md:w-[56vw] w-[90vw] flex justify-between items-center"
       >
         <div className="flex gap-2 text-[20px] font-medium items-center">
           <span className="text-[25px]">{icon}</span>
           <h2>{title}</h2>
         </div>
-        <UpOutlined
-        style={{ fontWeight: '800' }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="5"
+          viewBox="0 0 8 5"
+          fill="none"
           className={
             isOpen
-              ? "rotate-180 transition-all text-[10px] font-extrabold px-2"
-              : "rotate-0 transition-all text-[10px] font-extrabold px-2"
+              ? "rotate-180 transition-all mr-2"
+              : "rotate-0 transition-all mr-2"
           }
-        />
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3.99975 1.859L1.41427 4.44449C1.02374 4.83501 0.469722 4.91416 0.176829 4.62127C-0.116065 4.32837 -0.0369189 3.77435 0.353605 3.38383L3.18203 0.555402C3.42532 0.312111 3.73207 0.18967 3.9996 0.202744C4.2672 0.189566 4.57408 0.312009 4.81746 0.555388L7.64588 3.38381C8.03641 3.77434 8.11555 4.32836 7.82266 4.62125C7.52977 4.91415 6.97575 4.835 6.58523 4.44447L3.99975 1.859Z"
+            fill="black"
+            fill-opacity="0.85"
+          />
+        </svg>
       </div>
 
       <div
