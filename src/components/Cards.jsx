@@ -105,7 +105,7 @@ function Cards() {
       <Button
         type="primary"
         shape="round"
-        className="w-32 pb-8 mt-8 text-[16px]"
+        className="w-32 pb-8 sm:mt-8 mt-16 text-[16px]"
       >
         Save
       </Button>
