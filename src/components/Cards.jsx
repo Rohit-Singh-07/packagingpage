@@ -38,9 +38,9 @@ function Cards() {
   };
 
   return (
-    <>
+    <div className="pb-5 sm:pb-0">
       <div className="flex gap-1 flex-col">
-        <div className="flex gap-4 items-start h-8  mb-6">
+        <div className="flex gap-4 items-start h-8 mb-6">
           <h1 className="text-[26px] font-medium">Components</h1>
           <img
             src={FileAdd}
@@ -109,7 +109,7 @@ function Cards() {
       >
         Save
       </Button>
-    </>
+    </div>
   );
 }
 
